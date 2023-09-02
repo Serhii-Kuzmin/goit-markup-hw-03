@@ -204,8 +204,8 @@ img {
   display: flex;
   gap: 24px;
 }
-.item-features .subtitle {
-  flex-basis: calc((100% - 72px) / 4);
+.item-features {
+  width: calc((100% - 72px) / 4);
 }
 .menu-features .button-order-service:hover {
   background-color: #404bbf;
