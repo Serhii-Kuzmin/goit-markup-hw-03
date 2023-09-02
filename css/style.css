@@ -16,6 +16,77 @@ body {
   --logotype-color: #4d5ae5;
   --logo-text-color: #2e2f42;
 }
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.container {
+  width: 1158px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+img {
+  display: block;
+}
+.main-header .container {
+  display: flex;
+}
+.contact-info .list {
+  display: flex;
+  gap: 40px;
+}
+.items-nav {
+  display: flex;
+  gap: 76px;
+}
+.navigation-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation-link,
+.link-contact,
+.logotype {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logotype {
+  margin-right: 76px;
+}
+.navigation-menu {
+  margin-right: 332px;
+}
+
+/* CSS */
 .logotype {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
