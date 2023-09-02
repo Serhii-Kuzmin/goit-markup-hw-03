@@ -107,7 +107,7 @@ img {
   column-gap: 24px;
   row-gap: 48px;
 }
-.tagline-preview {
+.tag-prev {
   width: calc((100% - 48px) / 3);
 }
 .container-picture {
@@ -204,7 +204,7 @@ img {
   display: flex;
   gap: 24px;
 }
-.item {
+.item-features {
   flex-basis: calc((100% - 72px) / 4);
 }
 .menu-features .button-order-service:hover {
