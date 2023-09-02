@@ -1,3 +1,4 @@
+/* Start header */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -20,27 +21,38 @@ body {
 *::before *::after {
   box-sizing: border-box;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.main-header {
+  border-bottom: 1px solid #e7e9fc;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+.container-header {
+  display: flex;
 }
 .container {
   width: 1158px;
-  padding-left: 156px;
-  padding-right: 156px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
+.items-nav {
+  display: flex;
+  align-items: center;
+}
+.logotype {
+  margin-right: 76px;
+}
+.navigation-menu {
+  display: flex;
+  gap: 40px;
+}
+.navigation-link {
+  padding: 24px 0;
+}
+.list-contact {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+/* End header */
+/* Start Portfolio */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -56,37 +68,62 @@ p {
 img {
   display: block;
 }
-.main-header .container {
-  display: flex;
+.section-button {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
-.contact-info .list {
+.button-list {
   display: flex;
-  gap: 40px;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
-.items-nav {
-  display: flex;
-  gap: 76px;
-}
-.navigation-menu {
-  display: flex;
-  gap: 40px;
+.button {
+  font-family: var(--brand-text);
+  font-weight: 500;
+  font-size: var(--brand-font-size);
+  line-height: var(--brand-line-height);
+  letter-spacing: 0.04em;
+  color: var(--logotype-color);
+  background-color: var(--brand-background-color-button);
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
-.navigation-link,
-.link-contact,
-.logotype {
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+.button:hover {
+  color: white;
+  background-color: #404bbf;
+  border: 1px solid transparent;
 }
-.logotype {
-  margin-right: 76px;
+.button:focus {
+  color: white;
+  background-color: #404bbf;
+  border: 1px solid transparent;
 }
-.navigation-menu {
-  margin-right: 332px;
+.list-preview {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
-
-/* CSS */
+.tagline {
+  width: calc((100%-48px) / 3);
+}
+.container-picture {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--logo-text-color);
+  margin-bottom: 8px;
+}
+/* End Portfolio */
 .logotype {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -133,6 +170,7 @@ img {
 }
 .section-title {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .title {
   font-size: 56px;
@@ -140,6 +178,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: white;
+  max-width: 496px;
 }
 
 .button-order-service {
@@ -151,8 +190,22 @@ img {
   font-size: var(--brand-font-size);
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: block;
+  max-width: 169px;
+  height: 56px;
+  border: none;
 }
-.button-order-service:hover {
+.section-features {
+  padding: 120px 0;
+}
+.menu-features {
+  display: flex;
+  gap: 24px;
+}
+.item {
+  width: calc((100%-72px) / 4);
+}
+.menu-features .button-order-service:hover {
   background-color: #404bbf;
 }
 .button-order-service:focus {
@@ -162,33 +215,12 @@ img {
 .button-order-service {
   cursor: pointer;
 }
-.button {
-  font-family: var(--brand-text);
-  font-weight: 500;
-  font-size: var(--brand-font-size);
-  line-height: var(--brand-line-height);
-  letter-spacing: 0.04em;
-  color: var(--logotype-color);
-  background-color: var(--brand-background-color-button);
-}
 
-.button:hover {
-  color: white;
-  background-color: #404bbf;
-}
-.button:focus {
-  color: white;
-  background-color: #404bbf;
-}
 .list {
   list-style: none;
 }
-.subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--logo-text-color);
+.benefits {
+  padding-bottom: 120px;
 }
 .text {
   font-size: var(--brand-font-size);
@@ -203,15 +235,42 @@ img {
   letter-spacing: var(--brand-letter-spacing);
   text-transform: capitalize;
   color: var(--logo-text-color);
+  margin-bottom: 72px;
 }
+.menu-benefits {
+  display: flex;
+  gap: 24px;
+}
+,
+.item-benefits {
+  width: calc((100%-48px) / 3);
+}
+
 .desc {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+.menu-caption {
+  display: flex;
+  gap: 24px;
 }
 .page-style {
   background-color: #ffffff;
+  width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.excerpt {
+  padding: 32px 0;
+}
+.subject {
+  text-align: center;
+}
+.text-subject {
+  text-align: center;
 }
 .about {
   background-color: #2e2f42;
+  padding: 100px;
 }
 .text-about {
   font-family: var(--brand-text);
@@ -219,6 +278,7 @@ img {
   background-color: #2e2f42;
   font-size: var(--brand-font-size);
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 .logotype-about {
   font-family: "Raleway", sans-serif;
@@ -228,6 +288,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .span-about {
   color: #f4f4fd;
