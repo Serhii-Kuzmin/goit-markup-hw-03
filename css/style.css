@@ -107,7 +107,7 @@ img {
   column-gap: 24px;
   row-gap: 48px;
 }
-.tagline {
+.tagline-preview {
   width: calc((100%-48px) / 3);
 }
 .container-picture {
@@ -168,6 +168,7 @@ img {
 .link-contact:focus {
   color: #404bbf;
 }
+/* Start Studio */
 .section-title {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -191,9 +192,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   display: block;
-  max-width: 169px;
+  min-width: 169px;
   height: 56px;
   border: none;
+  border-radius: 4px;
 }
 .section-features {
   padding: 120px 0;
@@ -268,9 +270,11 @@ img {
 .text-subject {
   text-align: center;
 }
+/* End Studio */
+/* Start Footer*/
 .about {
   background-color: #2e2f42;
-  padding: 100px;
+  padding: 100px 0;
 }
 .text-about {
   font-family: var(--brand-text);
@@ -294,3 +298,4 @@ img {
 .span-about {
   color: #f4f4fd;
 }
+/* End Footer*/
