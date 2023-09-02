@@ -204,8 +204,7 @@ img {
   display: flex;
   gap: 24px;
 }
-.item-features .subtitle,
-.item-features .text {
+.item-features .subtitle {
   flex-basis: calc((100% - 72px) / 4);
 }
 .menu-features .button-order-service:hover {
