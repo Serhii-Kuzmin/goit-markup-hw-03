@@ -204,7 +204,7 @@ img {
   display: flex;
   gap: 24px;
 }
-.item-features .item {
+.item {
   width: calc((100% - 72px) / 4);
 }
 .menu-features .button-order-service:hover {
