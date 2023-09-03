@@ -204,12 +204,10 @@ img {
   display: flex;
   gap: 24px;
 }
-.text {
+.menu-features .item-text {
   width: calc((100% - 72px) / 4);
 }
-.subtitle {
-  width: calc((100% - 72px) / 4);
-}
+
 .menu-features .button-order-service:hover {
   background-color: #404bbf;
 }
