@@ -204,7 +204,10 @@ img {
   display: flex;
   gap: 24px;
 }
-.menu-features .item {
+.item-text .text {
+  width: calc((100% - 72px) / 4);
+}
+.item-text .subtitle {
   width: calc((100% - 72px) / 4);
 }
 .menu-features .button-order-service:hover {
