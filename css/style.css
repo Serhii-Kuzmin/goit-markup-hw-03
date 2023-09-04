@@ -203,6 +203,8 @@ img {
 .menu-features {
   display: flex;
   gap: 24px;
+  padding-left: 0;
+  margin: 0;
 }
 .menu-features .item-text {
   width: calc((100% - 3 * 24px) / 4);
@@ -221,8 +223,6 @@ img {
 
 .list {
   list-style: none;
-  padding-left: 0;
-  margin: 0;
 }
 .benefits {
   padding-bottom: 120px;
