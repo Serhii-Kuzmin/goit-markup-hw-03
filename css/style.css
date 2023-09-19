@@ -39,6 +39,7 @@ ul {
 }
 .container-header {
   display: flex;
+  align-items: center;
 }
 .container {
   width: 1158px;
@@ -57,12 +58,12 @@ ul {
   gap: 40px;
 }
 .navigation-link {
+  display: inline-block;
   padding: 24px 0;
 }
 .list-contact {
   display: flex;
   gap: 40px;
-  padding-left: 332px; /*новододане-поправка*/
 }
 /* End header */
 /* Start Portfolio */
@@ -168,6 +169,7 @@ img {
 }
 .contact-info {
   font-style: normal;
+  margin-left: auto;
 }
 .link-contact {
   font-size: 16px;
@@ -195,7 +197,7 @@ img {
   color: white;
   max-width: 496px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .button-order-service {
