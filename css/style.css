@@ -50,7 +50,7 @@ ul {
   align-items: center;
 }
 .logotype {
-  padding-right: 76px; /*новододане-поправка*/
+  margin-right: 76px; /*новододане-поправка*/
 }
 .navigation-menu {
   display: flex;
@@ -315,7 +315,7 @@ img {
   color: #4d5ae5;
   display: inline-block;
   padding-bottom: 16px;
-  margin: 0 auto;
+  margin-right: 76px;
 }
 .span-about {
   color: #f4f4fd;
