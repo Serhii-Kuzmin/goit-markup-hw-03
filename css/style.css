@@ -21,6 +21,19 @@ body {
 *::before *::after {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; /*новододане-поправка*/
+}
+ul {
+  margin: 0;
+  padding-left: 0; /*новододане-поправка*/
+}
 .main-header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -37,7 +50,7 @@ body {
   align-items: center;
 }
 .logotype {
-  margin-right: 76px;
+  padding-right: 76px; /*новододане-поправка*/
 }
 .navigation-menu {
   display: flex;
@@ -49,7 +62,7 @@ body {
 .list-contact {
   display: flex;
   gap: 40px;
-  justify-content: flex-end;
+  padding-left: 332px; /*новододане-поправка*/
 }
 /* End header */
 /* Start Portfolio */
@@ -172,6 +185,7 @@ img {
 .section-title {
   background-color: #2e2f42;
   padding: 188px 0;
+  margin: 0;
 }
 .title {
   font-size: 56px;
@@ -180,6 +194,8 @@ img {
   letter-spacing: 0.02em;
   color: white;
   max-width: 496px;
+  margin: 0 auto;
+  padding-bottom: 48px;
 }
 
 .button-order-service {
@@ -196,6 +212,7 @@ img {
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
 }
 .section-features {
   padding: 120px 0;
@@ -245,6 +262,8 @@ img {
 .menu-benefits {
   display: flex;
   gap: 24px;
+  text-align: center;
+  margin: 0 auto;
 }
 .item-benefits {
   width: calc((100%-48px) / 3);
@@ -295,7 +314,8 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   display: inline-block;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
+  margin: 0 auto;
 }
 .span-about {
   color: #f4f4fd;
